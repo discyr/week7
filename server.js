@@ -38,9 +38,9 @@ app.post(`/pumpkin`, (req, res) => {
 
 
 app.post('/rke143', (req, res) => {
-  const { username, password } = req.body;
+  const { name, code } = req.body;
 
-  if (username === 'rke' && password === '143') {
+  if (name === 'rke' && code === '143') {
     return res.status(200).json(nodeData);
   }
 
